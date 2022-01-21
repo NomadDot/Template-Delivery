@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:dividerHeight="1dp"
+        android:padding="8dp"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e9e9e9"
+        >
+
+        <TextView
+
+            android:id="@+id/sumText"
+            android:layout_width="63dp"
+            android:layout_height="35dp"
+            android:text="Сума:"
+            android:textSize="23dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/suma"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toRightOf="@id/sumText"
+            android:gravity="center"
+            android:text="2942"
+            android:textColor="@color/black"
+            android:textSize="23dp" />
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/buy_button_style"
+            android:text="Замовити"
+            android:layout_marginEnd="8dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

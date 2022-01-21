@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgSushiOne"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+
+            android:src="@drawable/sushi_futo_ugor"
+            />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/imgSushiOne"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:fontFamily="monospace"
+            android:padding="1dp"
+            android:text="Філадельфія з копченим лососем"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/itemName"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/imgSushiOne"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingRight="3dp"
+            android:paddingTop="6dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="150"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/grn"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/itemName"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/imgSushiOne"
+            android:layout_toRightOf="@id/price"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+
+            android:paddingTop="6dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="грн"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="10sp"
+            android:text="Додати"
+            android:background="@drawable/buy_button_style" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
